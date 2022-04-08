@@ -1,0 +1,10 @@
+1. System should support two players to play the game.
+2. Game board should be printed after every move.
+3. Each player is randomly assigned black/white stone.
+4. Cheess has 1 king, 1 queen, 2 rooks, 2 bishops, 2 knights, 8 pawns pieces.
+5. Each piece has its own rules.
+6. Game can be won if one of the player has no more pieces left.
+7 Game can be won if one player plays checkmate.
+8. Game  can be quit at any time.
+9. Game should maintain a log of moves.
+

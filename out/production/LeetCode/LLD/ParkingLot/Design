@@ -1,0 +1,76 @@
+Main Actors:
+1. Admin
+2. User
+3. System
+
+Actions:
+1. Add a new user: Admin
+2. Delete a user: Admin
+3. Update a user: Admin
+4. View all users: Admin
+5. Add parking floor: Admin
+6. Add parking slots: Admin
+7. Park a vehicle: System
+8. Unpark a vehicle: System
+9. View all parked vehicles: System
+10. Generate ticket: System
+11. Payment for the ticket: System
+12. Add/modify parking rate: Admin
+
+
+Classes:
+Parking Lot
+    Name, Address, Capacity, Parking Rate
+    ParkingRate
+    ParkingDisplayBoard
+    ParkingFloor
+
+    (add/modify) Parking Rate
+    (add/modify/get) ParkingFloor
+    addSlots(Slot[], Floor)
+    displayStatus
+    Ticket parkVehicle(Vehicle)
+    Vehicle exitVehicle(Ticket)
+    Long calculateCharge(Ticket)
+    PaymentStatus payForVehicle(Ticket, Amount)
+
+Parking Display Board
+    Id, capacity, freeSlots, occupiedSlots
+    display()
+
+Parking Floor
+    Parking Slot, Floor Number
+    Ticket
+    addSlots(Slot[] slots)
+    removeSlots(Slot[] slots)
+    getSlot(Vehicle)
+    Ticket parkVehicle(Vehicle)
+
+
+Parking Slot
+    Slot Id, Vehicle
+    SlotType: Small, Medium, Large
+    getSlot(Vehicle v)
+
+Vehicle
+    Vehicle Number, Vehicle Type, Vehicle Color, Vehicle Brand, Vehicle Model
+    Motorcycle, Bus, Car, Truck
+Ticket
+    TicketId, Vehicle
+    Ticket generateTicket(Vehicle)
+    TicketStatus settleTicket(Ticket)
+    TicketStatus: PENDING, PAID, CANCELLED
+    Payment
+Payment
+    paymentId, paymentDate, paymentAmount, paymentStatus,  paymentType
+    PAYMENT_STATUS_PENDING, PAYMENT_STATUS_SUCCESS, PAYMENT_STATUS_FAILED
+    PaymentStatus pay(Amount)
+
+ParkingRate
+    Map<VehicleType, Amount> map
+Admin
+User
+
+
+*/
+

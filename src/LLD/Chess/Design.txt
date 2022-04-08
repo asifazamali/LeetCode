@@ -1,0 +1,41 @@
+Actors:
+System
+Player
+Admin
+
+User case:
+1. Create a new user
+2. Match the two players
+3. Each player can play valid move
+4. Maintain game logs
+5. Game can reach its final state.
+
+
+Classes:
+Player
+Game
+    Board
+    Player
+Board
+    Piece[8][8]
+    Log
+Piece
+   id
+   color
+   move()
+   King, Queen, Rook, Bishop, Knight, Pawn
+
+Log
+    id
+    Move
+
+Move
+    from
+    to
+    piece
+    killedPiece
+Player
+    id
+    name
+    email
+    score

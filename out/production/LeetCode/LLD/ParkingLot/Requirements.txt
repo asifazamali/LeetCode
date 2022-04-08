@@ -1,0 +1,13 @@
+ParkingLot
+
+1. Parking lot has multiple parking floors.
+2. Each parking floor has multiple parking slots.
+3. Parking lot has multiple entry and exit points.
+4. Parking lot has display panel to show the status of parking spots.
+5. Parking lot has a ticket machine to issue parking tickets.
+6. Ticket will be paid by cash or credit card at the exit point.
+7. The system should not allow more vehicles than the capacity of parking lot.
+8. If the parking lot is full, then the vehicle should not be allowed to enter and should display on the display panel.
+9. Parking spot can be of different sizes (small, compact, large etc).
+10. Vehicle can be of different types (car, bus, truck etc).
+11. Parking can be chargeable on hourly basis.
