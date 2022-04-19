@@ -1,0 +1,13 @@
+Wallet System
+Actors:
+1. User
+2. Wallet System(Paytm)
+
+Use Cases:
+1. Create/Delete Account
+2. Add/Withdraw money
+3. Transfer Money (shopping)
+4. Transaction history
+
+
+

@@ -1,0 +1,15 @@
+Actor
+1. User (Delievery boy)
+2. Admin
+3. System
+Inventory Management
+Use Case
+1. User can issue/return an item
+2. Admin add/update products in the system
+3. Admin can update the capacity
+4. System can send the notification to concerned parties on state change
+5. Admin can maintain different catalogs for products
+6. User/Admin can search for products or over a catalog.
+
+
+

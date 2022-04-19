@@ -1,0 +1,73 @@
+Classes
+
+Account
+    id
+    username
+    password
+    mail
+
+User (Account)
+Admin (Account)
+System
+    Search search
+    Notification
+    Inventory
+
+   - searchByTitle()
+   - searchByCatalog()
+   - sendNotification()
+   - addProduct(Item, SubType)
+        -getContainer(concurrency)
+        -assigneContainer(Item, containerId)
+   - updateProduct(Item, SubType)
+    CRUD(Item)
+
+Container
+    Location
+    Item
+Location
+    -rackNo
+    -PlaceNumber
+
+Inventory
+    List[] containers
+    -addItem()
+    -updateItem()
+    -deleteItem()
+    -getItem()
+
+Ticket
+    id
+    itemId
+    pickupTime
+    NumberOfItems
+
+    CRUD
+
+Item
+    id
+    length
+    width
+    weight
+    enteredTime
+
+    CRUD
+
+Notification
+    id
+    to
+    from
+    content
+    -sendNotification(from, to, content)
+SubType
+    List[] items
+
+Search(interface)
+    searchByTitle(Title)
+    searchByCategory(Category)
+
+CatalogSearch implement Search
+    -SearchByTitle(Title)
+    -searchByCategory(Category)
+
+

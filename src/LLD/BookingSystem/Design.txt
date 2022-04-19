@@ -1,0 +1,85 @@
+Actors
+1. User
+2. Admin (Ticket Booking Staff)
+3. Guest
+4. System
+
+Use Case:
+Search Movies
+View booked/available seats
+Create/modify/cancel booking
+Make Cas/Credit payment
+Assign Seats
+
+
+Classes
+
+1. User
+2. Admin
+3. BookingSystem
+4. City
+    id
+    name
+    List[] cinemas
+
+5. Cinema
+    id
+    name
+    List[] Hall
+
+
+6. Movie
+    id
+    name
+    rating
+    List[] Show
+    MovieStatus
+
+7. Show
+    id
+    Hall playedAt
+    Movie movie
+    startTime
+    endTime
+
+8. Hall
+    id
+    name
+    List[] Seats
+    List[] Shows
+9. Seat
+    id
+    SeatType
+    SeatStatus
+10 Payment
+    id
+    amount
+    PaymentStatus
+11 Booking
+    id
+    BookingStatus
+    List[] Seats
+    createdOn
+12 Notification
+    to
+    from
+    content
+    createdOn
+
+13 Interface Search(){
+    searchByTitle(String title);
+    searchByCity(City)
+    searchByLanguage(Language)
+}
+
+14 Catalogue immplements Search{}
+
+API:
+Booking
+    POST /v1/bookings
+    GET /v1/bookings/<boookingID>
+    PATCH /v1/bookings/<bookingID>
+    DELETE /v1/bookings/<bookingID>
+
+
+

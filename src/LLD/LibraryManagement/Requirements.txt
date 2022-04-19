@@ -1,0 +1,18 @@
+Library Management
+
+Actors
+1. User/Student
+2. Admin/Librarian
+3. Library Management System
+
+Use Cases:
+1. User should be able to search books/magzines/newspapers or other library offerings.
+2. User should able to issue/return or republish the books.
+3. Admin should be able to add/remove books.
+4. Library management should be able issue/return books.
+5. Send notifications for book availability, overdue.
+6. Calculate and submit fines.
+7. Add/Remove/Suspend account
+8. There could be many copies of the book (we'll refer to each copy as book item).
+9. Limit on numbers of books checkout.
+10. Limit on number of days books checkout.

@@ -1,0 +1,17 @@
+Movie Ticket Booking System
+1. It should able to list the cities
+2. Each city has many cienamas
+3. Each cinema has multiple movies
+4. Each movie has multiple shows.
+5. User can search throughout the movie
+6. User can view multiple shows for a movie
+7. User can book/cancel tickets for a show
+8. Each ticket can have multiple seats.
+9. No duplicaite allotment to the seats
+10. System should send notifications when ticket is booked/cancelled.
+11. Customers can pay using cards/cash
+12. Customers can use discount coupons.
+13. System should be able to show seat arrangement to the user
+14. User should able to distinguish between booked and available seats.
+
+

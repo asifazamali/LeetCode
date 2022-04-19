@@ -1,0 +1,78 @@
+Library Management
+
+Account
+User
+booksIssued
+Admin
+
+LibraryManagement
+    -List[] BookItem
+    -Catalog
+    -Notification
+    -Payment
+
+    -checkout()
+    -return()
+    -calculateFine()
+    -addBook()
+    -removeBook()
+    -sendNotification()
+    -collectFine()
+    -add/remove/suspendAccount()
+    -
+Author
+    -id
+    -name
+    -mail
+
+Book
+    -name
+    -genre
+    -language
+    -publisher
+    -Author
+
+
+BookItem extends Book
+    -id
+    -Location: placeAt
+    -boolean BookingStatus
+                - ISSUED, OVERDUE, AVAILABLE
+Booking
+    id
+    created_at
+    bookItem
+    dueDate
+    returnDate
+
+Location
+    id
+    number
+    identifier
+
+Payment
+    id
+    amount
+    PaymentMode
+        -CASH, CHEQUE, UPI, CREDIT
+
+Notification
+    id
+    to
+    from
+    content
+    PhoneNotification (extends)
+        phoneNumber
+    EmailNotification (extends)
+        email
+
+interface Search
+    -searchByTitle(String)
+    -sarchByAuthor(String)
+Catalog implements Search
+    bookTitle: Map<String, List>
+    bookAuthors: Map<String, List>
+
+    updateCatalog()
+
+
