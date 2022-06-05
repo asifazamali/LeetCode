@@ -1,6 +1,9 @@
 package PracticeJava8.ComparatorDemo;
 
-public class Person {
+import java.util.Comparator;
+import java.util.Objects;
+
+public class Person implements Comparable<Person>{
     private int id;
     private String name;
     private int age;
@@ -66,6 +69,25 @@ public class Person {
 
     public void setSalary(double salary) {
         this.salary = salary;
+    }
+
+
+    @Override
+    public int compareTo(Person p){
+       return 0;
+    }
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Person person = (Person) o;
+        return id == person.id && age == person.age && children == person.children
+                && Double.compare(person.salary, salary) == 0 && Objects.equals(name, person.name);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, name, age, children, salary);
     }
 
     @Override
